@@ -1,0 +1,1 @@
+<h1>this is class 3 page</h1>
