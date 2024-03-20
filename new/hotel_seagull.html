@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Seagull</title>
+</head>
+<body>
+    <h1>Hotel Seagull</h1>
+    
+    <h2>Room Options:</h2>
+    <form action="booking_confirmation.php" method="post">
+        <label for="room_type">Select Room Type:</label>
+        <select id="room_type" name="room_type" required>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+        </select><br><br>
+
+        <label for="check_in_date">Check-in Date:</label>
+        <input type="date" id="check_in_date" name="check_in_date" required><br><br>
+
+        <label for="check_out_date">Check-out Date:</label>
+        <input type="date" id="check_out_date" name="check_out_date" required><br><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <h2>Rate and Review:</h2>
+    <form action="submit_review.php" method="post">
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rating (1-5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+        <label for="review">Review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+</body>
+</html>
+
+ 
